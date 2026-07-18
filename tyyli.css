@@ -28,12 +28,12 @@ ul li a:hover:not(.active) {
 ul li a.active {
   background-color: darkgreen;
 }
-h1 {
+h2 {
   color: goldenrod;
-  background-color: green;
   font-family: "Palatino Linotype", serif;
   font-size: 40px;
   text-align: left;
+  margin: 10 px;
 }
 p {
   font-family: "Palatino Linotype", serif;
