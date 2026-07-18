@@ -1,12 +1,37 @@
 <html>
-  
 <head>
 <style>
 body {
-  background-color: gold;
+  background-color: goldenrod;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+ul li {
+  float: left;
+}
+ul li a {
+  display: block;
+  color: gold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul li a:hover:not(.active) {
+  background-color: forestgreen;
+}
+ul li a.active {
+  background-color: darkgreen;
 }
 h1 {
-  color: gold;
+  color: goldenrod;
   background-color: green;
   font-family: "Palatino Linotype", serif;
   font-size: 40px;
@@ -16,29 +41,21 @@ p {
   font-family: "Palatino Linotype", serif;
   font-size: 20px;
 }
-ul {
-  background: green;
-  padding: 20px;
-}
-ul li {
-  color: black;
-  margin: 10px;
-}
 </style>
 </head>
-  
 <body>
-  <h1>Games4Bebe</h1>
-  
-<nav>
-  <ul>
-    <li><a href="g.html">Lista sairauksista</a></li>
-    <li><a href="g.html">Oireiden kartoitus</a></li>
-    <li><a href="g.html">Ihmisen biologia</a></li>
-    <li><a href="g.html">Eläinten biologia</a></li>
-    <li><a href="g.html">Lääketiede</a></li>
-  </ul>
-</nav>  
-</body>
 
+<ul>
+  <li><a class="active" href="index.html">Games4Bebe</a></li>
+  <li><a href="pulmapelit.html">Pulmat</a></li>
+  <li><a href="ajopelit.html">Ajaminen</a></li>
+  <li><a href="toimintapelit.html">Toiminta</a></li>
+  <li><a href="taitopelit.html">Taito</a></li>
+</ul>
+  
+<h1>Games4Bebe</h1>
+
+<p>Top bebe games 4 bebe!</p>
+  
+</body>
 </html>
