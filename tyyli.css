@@ -29,7 +29,7 @@ ul li a.active {
   background-color: darkgreen;
 }
 h2 {
-  color: goldenrod;
+  color: darkgreen;
   font-family: "Palatino Linotype", serif;
   font-size: 40px;
   text-align: left;
@@ -37,5 +37,6 @@ h2 {
 }
 p {
   font-family: "Palatino Linotype", serif;
+  color: darkgreen;
   font-size: 20px;
 }
