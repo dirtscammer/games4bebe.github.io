@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="stylesheet" href="tyyli.css">
+<style>
+  canvas {
+    border: 3px solid gold;
+    background-color: darkgreen;
+}
+</style>
 </head>
-<body>
+<body onload="startGame()">
 
 <ul>
   <li><a href="index.html">Gems4Bebe</a></li>
@@ -15,8 +22,17 @@
   
 <h2>Pasianssi</h2>
 
-<canvas id="myCanvas" width="1280" height="720" margin="20" style="border:1px solid darkgreen;"></canvas>
-
+<script>
+var myGameArea = {
+  canvas : document.createElement("canvas"),
+  start : function() {
+      this.canvas.width = 1060;
+      this.canvas.height = 500;
+      this.context = this.canvas.getContext("2d");
+      document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    }
+}
+</script>
 </body>
 </html>
 
